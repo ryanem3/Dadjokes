@@ -1,7 +1,10 @@
 const jokeEl = document.getElementById('joke');
 const jokeBtn = document.getElementById('jokeBtn');
 
-// async version of generateJoke
+// Splat sound
+const splatSound = new Audio('sounds/splat.mp3');
+
+// Get a joke from the API
 async function generateJoke() {
   const config = {
     headers: {
@@ -15,8 +18,13 @@ async function generateJoke() {
   jokeEl.textContent = data.joke;
 }
 
-// listener
-jokeBtn.addEventListener('click', generateJoke);
+// When the button is clicked
+jokeBtn.addEventListener('click', () => {
+  splatSound.currentTime = 0;
+  splatSound.play();
 
-// generate a joke when the page first loads
+  generateJoke();
+});
+
+// Get a joke when the page first opens
 generateJoke();

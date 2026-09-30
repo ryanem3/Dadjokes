@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: #686de0;
-  font-family: 'Roboto', sans-serif;
+  background-color: #78a350;
+  font-family: 'Patrick Hand', cursive;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,9 +18,10 @@ body {
 }
 
 .container {
-  background-color: #fff;
+  background-color: #dbe9df;
   border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1),
+              0 6px 6px rgba(0, 0, 0, 0.1);
   padding: 50px 20px;
   text-align: center;
   max-width: 100%;
@@ -31,10 +32,11 @@ h3 {
   margin: 0;
   opacity: 0.5;
   letter-spacing: 2px;
+  font-size: 28px;
 }
 
 .joke {
-  font-size: 30px;
+  font-size: 32px;
   letter-spacing: 1px;
   line-height: 40px;
   margin: 50px auto;
@@ -42,14 +44,20 @@ h3 {
 }
 
 .btn {
-  background-color: #9f68e0;
+  background-color: #68a0e0;
   color: #fff;
   border: 0;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1),
+              0 6px 6px rgba(0, 0, 0, 0.1);
   padding: 14px 40px;
-  font-size: 16px;
+  font-size: 20px;
+  font-family: 'Patrick Hand', cursive;
   cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.05);
 }
 
 .btn:active {
