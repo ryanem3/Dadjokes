@@ -2,7 +2,7 @@ const jokeEl = document.getElementById('joke');
 const jokeBtn = document.getElementById('jokeBtn');
 
 // Splat sound
-const splatSound = new Audio('sounds/splat.mp3');
+const splatSound = new Audio('Sound/splat.mp3.wav');
 
 // Get a joke from the API
 async function generateJoke() {
